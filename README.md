@@ -2,4 +2,7 @@
 
 Projet démo de flex grid css
 
-## sous section
+## Ressources
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+

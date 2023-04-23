@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid CSS Layout</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ejd4ojx.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+        body {
+            margin: 0;
+            font-family: "nudista-web", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .header,
+        .footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .layout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .card-container {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card {
+            background-image: linear-gradient(315deg, #4b0082 0%, #8a2be2 74%);
+            width: 16rem;
+            height: 10rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        
+        }
+
+
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 16rem;
+                margin-top: 0;
+            }
+
+            .main-content {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        Header
+    </header>
+
+    <div class="layout">
+        <div class="card-container">
+            <div class="card"></div>
+        </div>
+        <div class="card-container">
+            Game 2
+        </div>
+        <div class="card-container">
+            Game 3
+        </div>
+        <div class="card-container">
+            Game 4
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        Footer
+    </footer>
+
+</body>
+
+</html>
